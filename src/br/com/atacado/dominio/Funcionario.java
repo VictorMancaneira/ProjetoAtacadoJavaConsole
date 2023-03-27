@@ -2,7 +2,7 @@ package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 
-public class Funcionario extends BasePessoa {
+public class Funcionario extends PessoaFisica {
 
     private String matricula;
 
@@ -44,9 +44,11 @@ public class Funcionario extends BasePessoa {
         this.dataContratacao = dataContratacao;
     }
 
-    public Funcionario(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao,
-            String matricula, String login, String senha, LocalDate dataContratacao) {
-        super(codigoPessoa, nome, email, site, dataInclusao);
+    public Funcionario(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cpf,
+            String rg, String sexo, String raca, String nacionalidade, String naturalidade, String nomePai,
+            String nomeMae, String matricula, String login, String senha, LocalDate dataContratacao) {
+        super(codigoPessoa, nome, email, site, dataInclusao, cpf, rg, sexo, raca, nacionalidade, naturalidade, nomePai,
+                nomeMae);
         this.matricula = matricula;
         this.login = login;
         this.senha = senha;

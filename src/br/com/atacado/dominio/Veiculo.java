@@ -14,46 +14,6 @@ public class Veiculo extends BaseTransporte {
 
     private LocalDate dataInsert;
 
-    public int getCodigoVeiculo() {
-        return codigoVeiculo;
-    }
-
-    public void setCodigoVeiculo(int codigoVeiculo) {
-        this.codigoVeiculo = codigoVeiculo;
-    }
-
-    public int getCodigoFrota() {
-        return codigoFrota;
-    }
-
-    public void setCodigoFrota(int codigoFrota) {
-        this.codigoFrota = codigoFrota;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
-
-    public LocalDate getDataInsert() {
-        return dataInsert;
-    }
-
-    public void setDataInsert(LocalDate dataInsert) {
-        this.dataInsert = dataInsert;
-    }
-
     public Veiculo(int codigoTransporte, String descricao, LocalDate dataInsert) {
         super(codigoTransporte, descricao, dataInsert);
     }

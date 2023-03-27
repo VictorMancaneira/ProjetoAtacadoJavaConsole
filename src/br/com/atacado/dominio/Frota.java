@@ -13,30 +13,6 @@ public class Frota extends BaseTransporte {
 
     private List<Veiculo> Veiculos;
 
-    public int getCodigoFrota() {
-        return codigoFrota;
-    }
-
-    public void setCodigoFrota(int codigoFrota) {
-        this.codigoFrota = codigoFrota;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public LocalDate getDataInsert() {
-        return dataInsert;
-    }
-
-    public void setDataInsert(LocalDate dataInsert) {
-        this.dataInsert = dataInsert;
-    }
-
     public List<Veiculo> getVeiculos() {
         return Veiculos;
     }
