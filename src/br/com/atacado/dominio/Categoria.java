@@ -53,5 +53,4 @@ public class Categoria {
         this.descricao = descricao;
         this.dataDeInclusao = dataDeInclusao;
     }
-
 }
