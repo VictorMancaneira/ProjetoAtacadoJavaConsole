@@ -34,12 +34,13 @@ public abstract class BaseTransporte {
         this.dataInsert = dataInsert;
     }
 
+    public BaseTransporte() {
+    }
+
     public BaseTransporte(int codigoTransporte, String descricao, LocalDate dataInsert) {
         this.codigoTransporte = codigoTransporte;
         this.descricao = descricao;
         this.dataInsert = dataInsert;
     }
-
-    public abstract void Imprimir();
 
 }

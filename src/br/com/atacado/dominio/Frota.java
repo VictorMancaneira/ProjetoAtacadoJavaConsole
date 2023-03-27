@@ -5,52 +5,20 @@ import java.util.List;
 
 public class Frota extends BaseTransporte {
 
-    private int codigoFrota;
-
-    private String descricao;
-
-    private LocalDate dataInsert;
-
-    private List<Veiculo> Veiculos;
+    private List<Veiculo> veiculos;
 
     public List<Veiculo> getVeiculos() {
-        return Veiculos;
+        return veiculos;
     }
 
     public void setVeiculos(List<Veiculo> veiculos) {
-        Veiculos = veiculos;
+        this.veiculos = veiculos;
+    }
+
+    public Frota() {
     }
 
     public Frota(int codigoTransporte, String descricao, LocalDate dataInsert) {
         super(codigoTransporte, descricao, dataInsert);
     }
-
-    public Frota(int codigoTransporte, String descricao, LocalDate dataInsert, int codigoFrota, String descricao2,
-            LocalDate dataInsert2, List<Veiculo> veiculos) {
-        super(codigoTransporte, descricao, dataInsert);
-        this.codigoFrota = codigoFrota;
-        descricao = descricao2;
-        dataInsert = dataInsert2;
-        Veiculos = veiculos;
-    }
-
-    @Override
-    public void Imprimir() {
-        System.out.println("------------------------------------");
-        System.out.println("----------Detalhes da Frota---------");
-        System.out.println("Código da Frota: " + this.codigoFrota);
-        System.out.println("Descrição da Frota:  " + this.descricao);
-        System.out.println("Data da Frota : " + this.dataInsert);
-    }
-
-    @Override
-    public String toString() {
-        return "Frota [" +
-                "codigoFrota=" + codigoFrota +
-                ", descricao=" + descricao +
-                ", dataInsert=" + dataInsert +
-                ", Veiculos=" + Veiculos +
-                "]";
-    }
-
 }
